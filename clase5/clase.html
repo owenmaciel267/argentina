@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+            color: antiquewhite;
+        }
+        section{
+            width: 50%;
+            height: 20rem;
+            background: rgb(117, 126, 134);
+            border: 4px rgb(255, 0, 0) solid;
+
+            margin: auto;
+        }
+    </style>
+    <title>Clase 5</title>
+</head>
+<body>
+    <h1>Eventos</h1>
+
+    <section id="section">
+        <p>
+            cuadrado
+        </p>
+    </section>
+    <button type="button" id="btn" onclick="cambiarColor()">cambio</button>
+
+    <form id="form">
+        <input type="text" id="nombre" placeholder="nombre">
+        <input type="text" id="apellido" placeholder="apellido">
+        <input type="text" id="sexo" placeholder="sexo">
+        <input type="text" id="dni" placeholder="dni">
+
+    </form>
+    <button type="submit" id="agregar" onclick="creaTabla()">Enviar esto</button>
+    <table id="tabla">
+        <thead>
+            <th>nombre</th>
+            <th>apellido</th>
+            <th>sexo</th>
+            <th>numero</th>
+        </thead>
+        <tbody >
+
+        </tbody>
+    </table>
+
+    <script src="clase.js"></script>
+</body>
+</html>
