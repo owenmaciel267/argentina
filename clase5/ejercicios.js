@@ -137,29 +137,43 @@
 // }
 
 // 12
-// function enviarFormulario() {
+function enviarFormulario() {
 
-//     let ancho = document.getElementById("ancho").value;
-//     let alto = document.getElementById("alto").value;
-//     let largo = document.getElementById("largo").value;
-//     let peso = document.getElementById("peso").value;
-//     let direccion = document.getElementById("direccion").value;
+    let ancho = document.getElementById("ancho").value;
+    let alto = document.getElementById("alto").value;
+    let largo = document.getElementById("largo").value;
+    let peso = document.getElementById("peso").value;
+    let direccion = document.getElementById("direccion").value;
+
+    
+
+    if (ancho == "" || alto == "" || largo == "" || isNaN(ancho) || isNaN(alto) || isNaN(peso)|| peso == "" || direccion == "" ) {
+           
+            alert("Por favor, complete todos los campos del formulario, o complete correctamente estos");
+            return false;
+       
+    }
+    if (largo != "chica" && largo != "mediana" && largo != "grande") {
+        alert("El valor ingresado en el campo 'largo' no es válido. Debe ser 'chica', 'mediana' o 'grande'.");
+        return false;
+    }
+
+            alert(`¡El formulario ha sido enviado con éxito! \n 
+               -La caja se enviara a ${direccion} \n
+               -Su ancho es de: ${ancho}cm \n 
+               -Son una altura de: ${ancho}cm \n 
+               -Con un largo de: ${largo} \n 
+               -Y un peso de ${peso}kg` 
+           )   
+   
+           return true;
+           
+}
+    
+    
 
 
-//     if (ancho == "" || alto == "" || largo == "" || peso == "" || direccion == "") {
-//         alert("Por favor, complete todos los campos del formulario.");
-//         return false;
-//     }
-
-
-//     alert(`¡El formulario ha sido enviado con éxito! \n 
-//             -La caja se enviara a ${direccion} \n
-//             -Su ancho es de: ${ancho}cm \n 
-//             -Son una altura de: ${ancho}cm \n 
-//             -Con un largo de: ${largo}cm \n 
-//             -Y un peso de ${peso}kg`);
-//     return true;
-// }
+   
 
 
 // 13

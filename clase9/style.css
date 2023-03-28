@@ -1,0 +1,75 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0%;
+    margin: 0%;
+}
+.container-lg{
+    background-image: url(./ondas.svg);
+}
+.logo h1{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+}
+.ni-idea{
+    margin-top: 40px;
+}
+.login{
+    background-color: white;
+    padding: 5%;
+}
+.columna-1 img{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* ________________________________________________ */
+.login h2{
+    padding-bottom: 15%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+
+.campos input{
+    width: 450px;
+    border-radius: 50px;
+    padding: 8px;
+    margin: 20px 5px;
+    border: 1px solid rgb(175, 169, 169);
+    font-size: 18px;
+}
+input:focus{
+    outline: 1px solid rgb(210, 204, 204);
+}
+
+.olvidaste{
+    display: flex;
+    justify-content: end;
+    color:#E21982;
+    font-size: 18px;
+    margin: 25px;
+}
+
+.btn{
+    background-color:#E21982 ;
+    color: aliceblue;
+    margin: 25px;
+
+    border-radius: 25px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.btn:hover{
+    background-color: #e03a8f;
+    color: aliceblue;
+}
