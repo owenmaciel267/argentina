@@ -1,0 +1,144 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Roboto:wght@300&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif; 
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+}
+
+h6{
+    color: #e21982;
+}
+.collapse ul{
+    margin: auto;
+}
+
+a{
+    font-weight: bold !important;
+}
+.li-buttom{
+    display: flex;
+    width: 7rem;
+}
+.btn-propio-1{
+    background-color: #e21982;
+    color:white;
+    border: 0;
+    font-weight: bold;
+    padding: .7rem;
+    border-radius: 36px;
+    width: 100%;
+}
+
+.btn-propio-1:hover{
+    background-color: #c10767;
+    box-shadow: 0 4px 16px rgb(92, 94, 94);
+    transition: all 0.2s ease;
+}
+.btn-propio-2{
+    background-color: #e21982;
+    
+    color:white;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 36px;
+    width: 100%;
+    padding: .7rem;
+}
+
+
+.banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-text{
+    position:absolute;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+picture img{
+    width:100%;
+}
+#quienes-somos{
+    background-color: gainsboro;
+    padding: 3rem;
+}
+
+#ayuda{
+    padding: 3rem;
+}
+select{
+    border:1px solid #e21982; 
+}
+ select:hover {
+    outline: 2px solid #e21982 ;
+}
+
+
+.section-colab{
+    background-color: #e21982;
+    color: white;
+    padding: 3rem;
+}
+.section-colab p{
+    font-weight: bold;
+    font-size: 1rem;
+}
+#fq{
+    padding: 3rem;
+    background-color: aliceblue;
+}
+
+footer{
+    background-color: black;
+    color: antiquewhite;
+    padding: 2rem;
+}
+footer a{
+    margin: 0.5rem;
+}
+footer i {
+    margin: 0.5rem;
+    padding: .4rem;
+    font-size: 1.3rem;
+    color: #e21982;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px){
+    .menu{
+        display: contents;
+    }
+}
+
+@media (min-width: 765px){
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+}
+

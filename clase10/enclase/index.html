@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .el-que-cambia{
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+        }
+        .error {
+              color: red;
+                display: none;
+            }
+
+    </style>
+</head>
+<body>
+    <select id="color-list">
+        <option value="">Seleccione un color</option>
+        <option value="red">Rojo</option>
+        <option value="blue">Azul</option>
+        <option value="green">Verde</option>
+        <option value="yellow">Amarillo</option>
+      </select>
+      
+      <div class="el-que-cambia">
+        <p>
+            que onda
+        </p>
+      </div>
+      <!-- _______________________________________ -->
+
+      <h1>Formulario de registro</h1>
+      <form id="registro-form">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre">
+          <span class="error"></span>
+        </div>
+        <br>
+        <div>
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido">
+          <span class="error"></span>
+        </div>
+        <br>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <span class="error"></span>
+        </div>
+        <br>
+        <div>
+          <label for="contraseña">Contraseña:</label>
+          <input type="password" id="contraseña" name="contraseña">
+          <span class="error"></span>
+        </div>
+        <br>
+    </form>
+    <button type="submit" id="mandar">Registrarse</button>
+
+
+      <script src="index.js"></script>
+</body>
+</html>
