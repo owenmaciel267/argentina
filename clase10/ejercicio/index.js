@@ -136,19 +136,67 @@ function pares (numbers){
 console.log(pares(numbers));
 // 8. Crear una función que reciba un arreglo con palabras, crear un nuevo arreglo que
 // contenga sólo las palabras que empiezan con una vocal.
+// const palabras = []
+// const vocales =[]
+// for (let i = 0; i < 5; i++) {
+//     const ingresandoPalabras = prompt("ingresa palabras si esta contiene vocal se agregara a otro array")
+
+//     if(ingresandoPalabras.includes("a") ||ingresandoPalabras.includes("a") ||ingresandoPalabras.includes("a") ||ingresandoPalabras.includes("a") || ingresandoPalabras.includes("a")){
+//         vocales.push(ingresandoPalabras)
+//     }else{
+//         palabras.push(ingresandoPalabras)
+//     }
+// }
+// console.log(palabras);
+// console.log(vocales);
+
+
 
 // 9. Crear un método que permite intercambiar las posiciones de dos elementos de un
 // arreglo en base a sus índices
+function intercambiarElementos(arreglo, indice1, indice2) {
+    if (indice1 < 0 || indice1 >= arreglo.length || indice2 < 0 || indice2 >= arreglo.length) {
+      throw new Error("Los índices están fuera del rango del arreglo")
+    }
+  
+    const temp = arreglo[indice1]
+    arreglo[indice1] = arreglo[indice2]
+    arreglo[indice2] = temp
+}
+const arreglo = [1, 2, 3, 4, 5];
+console.log(arreglo);
+
+intercambiarElementos(arreglo, 1, 3);
+console.log(arreglo);
+
 
 // 10. Crear dos párrafos en el body de una página. Capturar el evento click solo del primero
 // utilizando la librería jQuery.
+$(document).ready(function() {
+    $('#primer-parrafo').click(function() {
+      alert('Haz hecho clic en el primer párrafo!')
+    })
+})
 
 // 11. Confeccionar una página que muestre una tabla con dos filas y cambiar el color de fondo
 // cuando sea presionada con el mouse.
+    // Obtener todas las celdas de la tabla
+   // Obtener todas las celdas de la tabla
+   var celdas = document.getElementsByTagName("td");
+
+   for (let i = 0; i < celdas.length; i++) {
+     celdas[i].addEventListener("click", function() {
+        this.classList.toggle("resaltado")
+     })
+   }
 
 // 12. Mostrar una lista no ordenada con 4 elementos 'li'. Ocultar el que se presiona. Para
 // ocultar un elemento jQuery tiene un método llamado hide().
-
+$(document).ready(function() {
+    $('li').click(function() {
+      $(this).hide();
+    });
+  });
 // 13. Confeccionar una página que muestre dos tablas con tres filas cada una. Cambiar el color
 // de fondo de cada fila de la primera tabla cuando sea presionada con el mouse.
 
